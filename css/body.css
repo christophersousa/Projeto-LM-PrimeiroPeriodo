@@ -1,0 +1,53 @@
+
+
+
+/* Menu de serviços*/
+
+.services-main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto;
+    max-width: 1100px;
+}
+
+.service{
+    width: 300px;
+    margin: 2rem 2rem;
+}
+
+.service a{
+    text-decoration: none;
+}
+
+.service h2{
+    color: black;
+    font-weight: 800;
+}
+
+.service img{
+    padding: 0px 15px;
+    height: 200px;
+}
+
+.service p{
+    color: black;
+    font-size: px;
+}
+
+@media all and (max-width: 850px){
+    .services-main{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: flex-end;
+        justify-content: center;
+    
+    }
+    
+    .service{
+        width: 320px;
+        margin: 2.5rem 0.5rem; 
+    }
+}
+

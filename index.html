@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial- scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/slideshow.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modal.css">
+
+    <title>Projeto de Linguagem de Marcação</title>
+</head>
+<body>
+    <!--Menu-->
+
+    <nav class="nav-container">
+        <div class="navegation">
+          <div class="nav-brand">
+            <i class="fas fa-home"></i>
+            <a href="./index.html">Home</a>
+          </div>
+          <div class="nav-menu">
+            <menu class="item">
+                <i class="fas fa-desktop"></i>
+                <a class="nav-item" href="processador/processadores.html" target="_blank">Computadores</a>
+            </menu>
+            <menu class="item">
+                <i class="fas fa-laptop"></i>
+                <a class="nav-item" href='./notebooks/Notebook.html' target="_blank">Notebooks</a>
+            </menu>
+            <menu class="item" >
+                <i class="fas fa-mobile-alt"></i>
+                <a class="nav-item" href="smartphones/smartphone.html" target="_blank">Celulares</a>
+            </menu>
+            <menu class="item" >
+                <i class="fas fa-user-circle"></i>
+                <p class="cadastro" href="##">Login</p>
+                <a href="./cadastro-mobile/cadastro-mobile.html" class="cadastro">Login</a>
+            </menu>
+          </div>
+        </div>
+    </nav>
+
+    <!--SlideShow-->
+    <div class="slider-container">
+        <div class="slides">
+            <!--radio buttons start-->
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--imagens do slide-->
+
+            <div class="slide first">
+                <img src="./img/1.jpg" alt="Primeira Imagem">
+            </div>
+
+            <div class="slide first2">
+                <img src="./img/2.jpg" alt="Segunda Imagem">
+            </div>
+
+            <div class="slide first3">
+                <img src="./img/3.jpg" alt="Terceira Imagem">
+            </div>
+            
+            <div class="slide first4">
+                <img src="./img/4.jpg" alt="Quarta Imagem">
+            </div>
+
+            <!--Slider automatizado-->
+
+            <div class="navigation">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <!--Ligação-->
+            
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <div class="logo">
+                <img src="./img/Logo.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Serviços-->
+
+    <main class="services-main">
+        <div class="service">
+          <a href="processador/processadores.html" target="_blank">
+            <img src="./img main service/computadores.png">
+            <h2>Computadores</h2>
+            <p>Melhores peças de hardwares para o seu computador.</p>
+          </a>
+        </div>
+        <div class="service">
+            <a href="notebooks/Notebook.html" target="_blank">
+                <img src="./img main service/notebooks.png">
+                <h2>Notebooks</h2>
+            </a>
+            <p>Notebooks e suas especificações.</p>
+        
+        </div>
+        <div class="service">
+            <a href="smartphones/smartphone.html" target="_blank">
+            <img src="./img main service/celulares.png">
+            </a>
+            <h2>Celulares</h2>
+            <p>Celulares e suas especificações.</p>
+        </div>
+    </main>
+
+    <!--Social-->
+    
+    <main class="social-main">
+        <div class="social">
+            <h3>Direitos altorais:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="social" id="alunos">
+            <h3>Programadores:</h3>
+            <p>Christopher Silva de Sousa.</p>
+            <p>Luís Henrique Ferreira Freire.</p>
+            <p>Josilete Rodrigues de Albuquerque</p>
+        </div>
+        <div class="social">
+            <h3>Objetivo:</h3>
+            <p>Produzir um site para auxiliar os usuarios a escolherem os melhores produtos para suas necessidades.</p>
+        </div>
+    </main>
+    <div class="copyright-container">
+        <i class="fas fa-heart"></i>
+        <span class="copyright">Projeto de Linguagem de Marcação</span>
+    </div>   
+
+    <!--Modal de cadastro-->
+
+    <div class="modal-container" id="modal-cadastro">
+        <div class="modal">
+            <h3>Login</h3>
+            <form action="">
+                <button class="close">X</button>
+                <div>
+                    <label for="email" class="email"><i class="fas fa-user"></i> Login:</label>
+                    <br>
+                    <input type="text" name="email" id='email' placeholder="informe o nome do usuario...">
+                </div>
+                <div>
+                    <label for="senha" class="senha"><i class="far fa-eye"></i> Senha:</label>
+                    <br>
+                    <input type='password' id="senha" name='senha' placeholder="informe a senha..." >
+                </div>
+                <div class="div-lembra">
+                    <input type="checkbox" name="lembre" id="lembre" value="Ok"  >
+                    <label for="lembre" class="lembre"><i class="far fa-bell"></i> Lembre-me.</label>
+                </div>
+                <div>
+                    <input type="submit" name='enviar' id='enviar' value="Enviar">
+                </div>
+                <hr>
+                <div class="complemento">
+                    <button class="cancele"><i class="far fa-times-circle"></i> cancelar</button>
+
+                    <div class="complementos">
+                        <p><a href="##">Esqueci minha senha</a></p>
+                        <p><a href="##">Cadastre-se</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Javascript-->
+
+    <script type="text/javascript" src="./javascript/modal.js"></script>
+    <script type="text/javascript" src="./javascript/slideshow.js"></script>
+
+</body>
+</html>

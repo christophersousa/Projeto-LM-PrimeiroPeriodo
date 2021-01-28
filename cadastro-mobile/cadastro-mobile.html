@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cadastro-mobile.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+     <!--Menu-->
+
+     <nav class="nav-container">
+        <div class="navegation">
+          <div class="nav-brand">
+            <i class="fas fa-home"></i>
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="nav-menu">
+            <menu class="item">
+                <i class="fas fa-desktop"></i>
+                <a class="nav-item" href="../processador/processadores.html">Computadores</a>
+            </menu>
+            <menu class="item">
+                <i class="fas fa-laptop"></i>
+                <a class="nav-item" href='../notebooks/Notebook.html'>Notebooks</a>
+            </menu>
+            <menu class="item" >
+                <i class="fas fa-mobile-alt"></i>
+                <a class="nav-item" href="../smartphones/smartphone.html">Celulares</a>
+            </menu>
+            <menu class="item" >
+                <i class="fas fa-user-circle"></i>
+                <p class="cadastro" href="##">Login</p>
+                <a href="./cadastro-mobile.html" class="cadastro">Login</a>
+            </menu>
+          </div>
+        </div>
+    </nav>
+
+    <!--Formulario de cadastro-->
+
+    <div class="cadastro-mobile">
+        <div class="mobile">
+            <h1>Login</h1>
+            <div>
+                <label for="email-mobile" class="email-mobile"><i class="fas fa-user"></i> Login:</label>
+                <br>
+                <input type="text" name="email" id='email-mobile' placeholder="informe o nome do usuario ou email...">
+            </div>
+            <div>
+                <label for="senha-mobile" class="senha-mobile"><i class="far fa-eye"></i> Senha:</label>
+                <br>
+                <input type='password' id="senha-mobile" name='senha' placeholder="informe a senha..." >
+            </div>
+            <div class="div-lembre">
+                <input type="checkbox" name="lembre" id="lembre" value="Ok"  >
+                <label for="lembre" class="lembre"><i class="far fa-bell"></i>Lembre-me.</label>
+            </div>
+            <div>
+                <input type="submit" name='enviar' id='enviar' value="Enviar">
+            </div>
+            <div class="complemento-mobile">
+                    <p><a href="##">Esqueceu sua senha ?</a></p>
+                    <p><a href="##" class="btn-cadastro">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--Social-->
+    <main class="social-main">
+        <div class="social">
+            <h3>Direitos altorais:</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class="social" id="alunos">
+            <h3>Programadores:</h3>
+            <p>Christopher Silva de Sousa.</p>
+            <p>Luís Henrique Ferreira Freire.</p>
+            <p>Josilete Rodrigues de Albuquerque</p>
+        </div>
+        <div class="social">
+            <h3>Objetivo:</h3>
+            <p>Produzir um site para auxiliar os usuarios a escolherem os melhores produtos para suas necessidades.</p>
+        </div>
+    </main>
+    <div class="copyright-container">
+        <i class="fas fa-heart"></i>
+        <span class="copyright">Projeto de Linguagem de Marcação</span>
+    </div>   
+
+</body>
+</html>

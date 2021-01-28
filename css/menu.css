@@ -1,0 +1,137 @@
+/*fonte geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@font-face{
+    font-family: 'Quicksand';
+    src: url(../fonts/Quicksand_Book.otf);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+/*Menu*/
+
+.nav-container{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 99;
+    background-color: #333;
+    top: 0;
+}
+
+.navegation{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.nav-menu{
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: flex-end;
+    grid-gap: 1rem;
+}
+
+.nav-menu a, .nav-brand a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-brand{
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+    margin-left: 8px;
+}
+
+/*icones do menu*/
+
+nav .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    top: -20px;
+}
+
+nav .cadastro{
+    cursor: pointer;
+    color: white;
+}
+
+nav a.cadastro{
+    display: none;
+}
+
+nav .nav-brand i {
+    font-size: 20px;
+    color: white;
+    align-self: center;
+    text-align: center;
+}
+
+nav .fas{
+    margin-right: 0.5rem;
+    font-size: 15px;
+    color: white;
+}
+
+
+@media all and (max-width: 650px){
+
+    .navegation{
+        position: relative;
+        top: 50%;
+    }
+
+    nav.nav-container{
+        top: 0px;
+    }
+    
+    .nav-menu{
+          font-size: 0.7rem;
+          margin-right: 5px;
+    }
+  
+    .nav-brand{
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    nav .item{
+        padding: 0;
+    }
+
+    nav .nav-brand .fas{
+        display: none;
+    }
+
+    nav .nav-menu .fas{
+        display: none;
+    }
+}
+
+/*nessa parte vai deixar o modal inativo e vai ativar o link para o cadastro mobile*/
+
+@media all and (max-width:650px){
+
+    nav p.cadastro{
+        display: none;
+    }
+
+    nav a.cadastro{
+        display: block;
+    }
+}
+
